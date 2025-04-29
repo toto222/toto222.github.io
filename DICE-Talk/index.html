@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Disentangle Identity, Cooperate Emotion: Correlation-Aware Emotional Talking Portrait Generation</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Disentangle Identity, Cooperate Emotion: Correlation-Aware Emotional Talking Portrait Generation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="">Weipeng Tan</a><sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://linchuming.github.io/">Chuming Lin</a><sup>2*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://chmxu.github.io/">Chengming Xu</a><sup>2*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Feifan Xu</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://huuxiaobin.github.io/">Xiaobin Hu</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Xiaozhong Ji</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Junwei Zhu</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Chengjie Wang</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Yanwei Fu</a><sup>1†</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Fudan University,</span>
+            <span class="author-block"><sup>2</sup>Youtu Lab, Tencent, China</span>
+          </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>*</sup> Indicates Equal Contribution</span>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2504.18087"
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="#"
+                    class="external-link button is-normal is-rounded is-dark"
+                    onclick="alert('This page is not ready yet. TODO!'); return false;">
+                    🤗️&nbsp&nbsp
+                  <span>Demo</span>
+                </a>
+              </span>
+              
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/toto222/DICE-Talk.git"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+          <div class="column has-text-centered">
+            <span><b>TL;DR</b>: We propose a novel paradigm, dubbed as <b>DICE-Talk</b>, which is a new framework for generating talking head videos with vivid, identity-preserving emotional expressions. </span>
+            <div class='responsive-image-container' >
+              <img src='static/teaser.png' alt='' style="width: 80%; height: auto;"/>
+            </div>
+          </div>
+        </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Generated Videos</h2>
+      <h4 class="text is-4">
+        DICE-Talk produces vivid and diverse emotions for speaking portraits. The images and audios are collected from recent works or sourced from the Internet.
+      </h4>
+        <video controls playsinline height="100%">
+          <source src="./results/demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Abstract</h2>
+      <h4 class="text is-4">
+        Recent advances in Talking Head Generation (THG) have achieved impressive lip synchronization and visual quality through diffusion models; yet existing methods struggle to generate emotionally expressive portraits while preserving speaker identity. We identify three critical limitations in current emotional talking head generation: insufficient utilization of audio's inherent emotional cues, identity leakage in emotion representations, and isolated learning of emotion correlations. To address these challenges, we propose a novel framework dubbed as DICE-Talk, following the idea of disentangling identity with emotion, and then cooperating emotions with similar characteristics. First, we develop a disentangled emotion embedder that jointly models audio-visual emotional cues through cross-modal attention, representing emotions as identity-agnostic Gaussian distributions. Second, we introduce a correlation-enhanced emotion conditioning module with learnable emotion banks that explicitly capture inter-emotion relationships through vector quantization and attention-based feature aggregation. Third, we design an emotion discrimination objective that enforces affective consistency during the diffusion process through latent-space classification. Extensive experiments on MEAD and HDTF datasets demonstrate our method's superiority, outperforming state-of-the-art approaches in emotion accuracy while maintaining competitive lip-sync performance. Qualitative results and user studies further confirm our method's ability to generate identity-preserving portraits with rich, correlated emotional expressions that naturally adapt to unseen identities.
+      </h4>
+    </div>
+  </div>
+</section>
+
+
+<!-- End paper abstract -->
+
+<script>
+  // Render LaTeX when the page is loaded
+  MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+</script>
+
+<!-- Single Image Display -->
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Framework</h2>
+      <div class="single-image-display">
+        <img src="static/framework.png" alt="Image Description" class="image">
+        <p>
+          Framework of DICE-Talk. Our method comprises three key components: disentangled emotion embedder, correlation-enhanced emotion conditioning, and emotion discrimination objective. These architectural elements work synergistically to decouple identity representations from emotional cues while preserving facial articulation details, thereby generating lifelike animated portraits with emotionally nuanced expressions.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3 has-text-centered">BibTeX</h2>
+    <pre><code>@misc{tan2025disentangleidentitycooperateemotion,
+      title={Disentangle Identity, Cooperate Emotion: Correlation-Aware Emotional Talking Portrait Generation}, 
+      author={Weipeng Tan and Chuming Lin and Chengming Xu and FeiFan Xu and Xiaobin Hu and Xiaozhong Ji and Junwei Zhu and Chengjie Wang and Yanwei Fu},
+      year={2025},
+      eprint={2504.18087},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2504.18087}, 
+}</code></pre>
+  </div>
+</section>
+<!--End BibTex citation -->
+
+
+</body>
+</html>
